@@ -96,3 +96,88 @@ function contagemRegressiva(numero){
         
     }
 }
+
+//FUNÇÃO 07
+
+
+function aumentoSalario(salario){
+    if(salario <1000 && salario>=0){
+        salario = salario * 1.20
+        console.log("seu salario aumentado é: " + salario);
+        
+    }
+    else if(salario >=1000 && salario<=2000){
+        salario = salario * 1.15
+        console.log("seu salario aumentado é: " + salario);
+        
+    }
+    else if(salario > 2000){
+        salario = salario * 1.10
+        console.log("seu salario aumentado é: " + salario);
+        
+    }
+    else{
+        console.log("o salario falado e invalido");
+        
+    }
+}
+
+//FUNÇÃO 08
+
+function validarImparPar(numero){
+    if(numero == 0){
+        console.log("seu numero e zero");
+        
+    }
+    else if(numero % 2 == 0){
+        console.log("seu numero: "+numero+" e par");
+        
+    }
+    else{
+        console.log("seu numero: "+numero+" e impar");
+        
+    }
+}
+
+//FUNÇÃO 09
+
+function inverterTemperatura(numTeperatura,tipoTemperatura){
+    // tipoTemperatura = tipoTemperatura.lower
+    let numConvertido
+    if(tipoTemperatura == "c"){
+        numConvertido = (numTeperatura * 1.8) + 32
+        console.log("sua temperatura de Celsius convertida para Fahrenheit é: "+numConvertido);
+        
+    }
+    else if(tipoTemperatura == "f"){
+        numConvertido = (numTeperatura - 32)/1.8
+        console.log("sua temperatura de Fahrenheit convertida para Celsius é: "+numConvertido);
+        
+    }
+    else{
+        console.log("sua temperatura é invalida");
+        
+    }
+    
+}
+
+
+//FUNÇÃO 10
+
+
+function diferenciarTriangulo(lado1,lado2,lado3){
+    if(lado1 == lado2 && lado2 == lado3 && lado2 == lado3){
+        console.log("seu triangulo é equilátero");
+    }
+    else if(lado1 != lado2 && lado2 != lado3 && lado1 != lado3){
+        console.log("seu triangulo é escaleno");
+    }
+    else{
+        console.log("seu triangulo e isósceles");
+        
+    }
+}
+diferenciarTriangulo(11,10,11)
+
+
+//FUNÇÃO 11 
